@@ -1,19 +1,9 @@
-# ![Node/Express/Mongoose Example App](project-logo.png)
-
-[![Build Status](https://travis-ci.org/anishkny/node-express-realworld-example-app.svg?branch=master)](https://travis-ci.org/anishkny/node-express-realworld-example-app)
-
-> ### NestJS codebase containing real world examples (CRUD, auth, advanced patterns, etc) that adheres to the [RealWorld](https://github.com/gothinkster/realworld-example-apps) API spec.
-
-
-----------
-
 # Getting started
+This repo is forked from [nestjs realworld example app](https://github.com/lujakob/nestjs-realworld-example-app.git), to be used as my demo project to learn nestjs. The libraries in original repo is a bit outdated, so I upgraded them to the lastest version and add docker-compose.yml to run mysql server locally
 
 ## Installation
 
 Clone the repository
-
-    git clone https://github.com/lujakob/nestjs-realworld-example-app.git
 
 Switch to the repo folder
 
@@ -43,7 +33,10 @@ The branch `prisma` implements Prisma with a mySQL database.
 
 ----------
 
-Create a new mysql database with the name `nestjsrealworld`\
+Start mysql database by running
+    docker-compose -f docker-compose.yml up 
+
+Create a new mysql database with adminer (http://127.0.0.1:8080) with the name `nestjsrealworld`\
 (or the name you specified in the ormconfig.json)
 
 Copy TypeORM config example file for database settings

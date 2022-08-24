@@ -1,9 +1,17 @@
 "use strict";
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
 const config_1 = require("../config");
-const jwt = require("jsonwebtoken");
-exports.User = common_1.createParamDecorator((data, req) => {
+const jwt = __importStar(require("jsonwebtoken"));
+exports.User = common_1.createParamDecorator((data, ctx) => {
+    const req = ctx.switchToHttp().getRequest();
     if (!!req.user) {
         return !!data ? req.user[data] : req.user;
     }

@@ -8,10 +8,12 @@
     "lib": ["es2017"],
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "esModuleInterop": true,
     "target": "es6",
     "sourceMap": true,
     "allowJs": true,
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "moduleResolution": "node",
   },
     "include": [
     "src/**/*"
