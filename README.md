@@ -17,6 +17,7 @@ The branch `prisma` implements Prisma with a mySQL database (without Docker)
 ----------
 
 ## Use  
-API server will run at: http://127.0.0.1:3000, API docs run at http://127.0.0.1:3000/docs
-Control Panel for MySQL run at: http://127.0.0.1:8080 (see password in docker-compose.yml)
+- API server will run at: http://127.0.0.1:3000
+- API docs run at http://127.0.0.1:3000/docs  
+- Control Panel for MySQL run at: http://127.0.0.1:8080 (see password in docker-compose.yml)
 
