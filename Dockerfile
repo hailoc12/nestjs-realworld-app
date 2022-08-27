@@ -2,5 +2,5 @@
 FROM node:latest
 WORKDIR /code
 COPY . /code/
-RUN npm install
+RUN npm install --force
 # RUN npm run start:prod
